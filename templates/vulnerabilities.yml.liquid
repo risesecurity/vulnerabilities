@@ -1,0 +1,11 @@
+---
+permalink: vulnerabilities.yml
+---
+
+---
+{%- for vulnerability in site.data.vulnerabilities %}
+- name:      {{ vulnerability.name }}
+  published: {{ vulnerability.published | date: "%F" }}
+  updated:   {{ vulnerability.updated | date: "%F" }}
+  url:       https://cve.mitre.org/cgi-bin/cvename.cgi?name={{ vulnerability.name }}
+{%- endfor %}

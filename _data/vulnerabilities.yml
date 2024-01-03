@@ -13,7 +13,7 @@
     string to remote procedure 15.
   name: CVE-2009-2727
   published: 2009-08-10 00:00:00.000000000 Z
-  updated:
+  updated: 
 - description: Heap-based buffer overflow in the parse_tag_3_packet function in fs/ecryptfs/keystore.c
     in the eCryptfs subsystem in the Linux kernel before 2.6.30.4 allows local users
     to cause a denial of service (system crash) or possibly gain privileges via vectors

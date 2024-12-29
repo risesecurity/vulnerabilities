@@ -1,0 +1,8 @@
+---
+permalink: vulnerabilities.csv
+---
+
+name,published,updated,url
+{%- for vulnerability in site.data.vulnerabilities %}
+{{ vulnerability.name }},{{ vulnerability.published | date: "%F" }},{{ vulnerability.updated | date: "%F" }},https://cve.mitre.org/cgi-bin/cvename.cgi?name={{ vulnerability.name }}
+{%- endfor %}
